@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "m+qx80PRf/n1r0ssaMENYx2pOf21W0b1RMlhN/C69CNqMBsnBMAC95HoXjl/F+Qng21gDbfW0xrTbwaD7Vrg6A==",
+  "success": true,
+  "projectFilePath": "/Users/ArthurNG_1/Desktop/Portfolio/DrinksInfo/DrinksInfo/DrinksInfo/DrinksInfo.csproj",
+  "expectedPackageFiles": [
+    "/Users/ArthurNG_1/.nuget/packages/consoletableext/3.2.0/consoletableext.3.2.0.nupkg.sha512",
+    "/Users/ArthurNG_1/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/ArthurNG_1/.nuget/packages/restsharp/107.3.0/restsharp.107.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
