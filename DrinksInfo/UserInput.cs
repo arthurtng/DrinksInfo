@@ -10,15 +10,23 @@ public class UserInput
         
         Console.WriteLine("Choose category:");
 
-        string category = Console.ReadLine();
-
-        while (!Validator.IsStringValid(category))
+        try
         {
-            Console.WriteLine("\nInvalid category");
-            category = Console.ReadLine();
-        }
+            string category = Console.ReadLine();
 
-        GetDrinksInput(category);
+            while (!Validator.IsStringValid(category))
+            {
+                Console.WriteLine("\nInvalid category");
+                category = Console.ReadLine();
+            }
+
+            GetDrinksInput(category);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error getting drinks category, try again. ({e.Message})");
+            GetCategoriesInput();
+        }
     }
 
     private void GetDrinksInput(string category)
@@ -33,7 +41,7 @@ public class UserInput
 
         while (!Validator.IsIdValid(drink))
         {
-            Console.WriteLine("\nInvalid category");
+            Console.WriteLine("\nInvalid selection, try again: \n");
             drink = Console.ReadLine();
         }
         

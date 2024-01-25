@@ -48,6 +48,10 @@ public class DrinksService
         if (response.StatusCode == System.Net.HttpStatusCode.OK)
         {
             string rawResponse = response.Content;
+            if (String.IsNullOrEmpty(rawResponse))
+            {
+                throw new Exception("Response from server has no content.");
+            }
             var serialize = JsonConvert.DeserializeObject<Drinks>(rawResponse);
             if (serialize != null)
             {
