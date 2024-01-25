@@ -16,6 +16,7 @@ public class TableVisualisationEngine
         ConsoleTableBuilder
             .From(tableData)
             .WithColumn(tableName)
+            .WithFormat(ConsoleTableBuilderFormat.Alternative)
             .ExportAndWriteLine();
         Console.WriteLine("\n\n");
     }
